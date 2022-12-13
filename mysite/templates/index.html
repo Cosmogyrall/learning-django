@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template is working</title>
+</head>
+<body>
+Welcome to the index of text analyzer<br>
+<h1>Welcome to text analyzer. Enter your text here :</h1>
+<form action="/analyzer" method="post"> {% csrf_token %}
+    <textarea name="text"></textarea><br>
+    <input type ="checkbox", name="box">Remove Punctuation</input><br>
+    <input type ="checkbox", name="fullcaps">Uppercase</input><br>
+    <input type ="checkbox", name="charcount">character counter</input><br>
+
+    <button type="submit">analyze text</button>
+</form>
+</body>
+</html>
